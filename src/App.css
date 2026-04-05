@@ -89,7 +89,7 @@
   background: var(--code-bg);
   border: 1px solid var(--border);
   transition: all 0.2s ease;
-}
+} 
 .search-input:focus {
   outline: none;
   border-color: var(--accent);

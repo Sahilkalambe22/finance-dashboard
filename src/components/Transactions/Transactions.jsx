@@ -45,14 +45,23 @@ function Transactions({ role }) {
 				</thead>
 
 				<tbody>
-					{filteredData.map((t) => (
-						<tr key={t.id} className="border-b border-gray-700 hover:bg-gray-700/30">
-							<td className="p-3">{t.date}</td>
-							<td className="p-3">{t.category}</td>
-							<td className="p-3">₹ {t.amount}</td>
-							<td className={`p-3 font-medium ${t.type === "income" ? "text-green-400" : "text-red-400"}`}>{t.type}</td>
+					{filteredData.length > 0 ? (
+						filteredData.map((t) => (
+							<tr key={t.id} className="border-b border-gray-700 hover:bg-gray-700/30">
+								<td className="p-3">{t.date}</td>
+								<td className="p-3">{t.category}</td>
+								<td className="p-3">₹ {t.amount}</td>
+								<td className={`p-3 font-medium ${t.type === "income" ? "text-green-400" : "text-red-400"}`}>{t.type}</td>
+							</tr>
+						))
+					) : (
+						<tr>
+							<td colSpan="4" className="text-center py-6 text-gray-400">
+								🚫 No transactions found
+								<div className="text-sm mt-1">Try adjusting filters or search</div>
+							</td>
 						</tr>
-					))}
+					)}
 				</tbody>
 			</table>
 		</div>
