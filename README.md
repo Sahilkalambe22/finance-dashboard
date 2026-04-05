@@ -7,7 +7,7 @@ This project demonstrates how financial data can be visualized and managed on th
 
 ## 🚀 Live Demo
 
-*(Add your deployed link here if available)*
+https://finance-dashboard-sand-two.vercel.app/
 
 ---
 
