@@ -142,6 +142,19 @@ npm run dev
 
 ---
 
+## 🧠 Approach
+
+The goal of this project was to design a clean and intuitive finance dashboard with a focus on frontend usability and structure.
+
+- The application is divided into modular components such as Dashboard, Transactions, and Insights to ensure scalability and maintainability.
+- Mock data is used to simulate real-world financial transactions.
+- Data is processed on the frontend to calculate totals, generate charts, and derive insights.
+- Role-based access is implemented by conditionally rendering UI elements based on user roles (Admin and Viewer).
+- State is managed using React hooks to keep the implementation simple and efficient.
+- CSS variables combined with Tailwind CSS are used to support dynamic theme switching between light and dark modes.
+
+The focus was to keep the application simple, user-friendly, and aligned with real-world dashboard behavior.
+
 ## 🎯 Key Highlights
 
 * Clean and modern UI design
